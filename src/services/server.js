@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseURL: 'https://localhost:8080',
+    baseURL: VUE_APP_API_URL || "http://localhost:4000"
 });
 
 export default instance
