@@ -1,0 +1,3 @@
+<template>
+  Sobre
+</template>
