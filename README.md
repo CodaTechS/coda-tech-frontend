@@ -43,7 +43,7 @@ O projeto também pode ser executado utilizando Docker Compose, que facilita a c
 
 2. **Navegar até a pasta do projeto:**
      ```
-        git clone git@github.com:CodaTechS/coda-tech-frontend.git
+        cd coda-tech-frontend
     ``` 
 
 3. **Criar arquivo `.env` para Docker Compose:**
