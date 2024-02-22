@@ -52,8 +52,10 @@ O projeto também pode ser executado utilizando Docker Compose, que facilita a c
 4. **Construir e Iniciar os Contêineres:**
    - Execute o comando `docker-compose up --build` para construir as imagens e iniciar os contêineres.
 
-5. **Acessar a API:**
-   - A aplicação estará acessível em `http://localhost:{PORT}`, onde `{PORT}` é a porta definida no arquivo `.env`.
+5. **Acessar a aplicação:**
+     ```
+        https://localhost:8080
+    ``` 
 
 6. **Parar os Contêineres:**
    - Para parar a execução dos contêineres, pressione `Ctrl + C` no terminal onde o `docker-compose up` está sendo executado.
@@ -67,6 +69,4 @@ O projeto também pode ser executado utilizando Docker Compose, que facilita a c
 7. **ESLint no Docker**
    ```
    docker-compose run --rm frontend npm run lint
-
-
    ```
