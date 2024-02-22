@@ -1,55 +1,72 @@
-# codatech-frontend :computer: 
+# Front End Coda Tech Solutions
 
-## Bem-vindo à documentação do codatech-frontend! Este guia irá ajudá-lo a configurar e gerenciar o site.
-## Configuração do Projeto :wrench: 
+## Introdução
 
-### Para inicializar o seu projeto e instalar suas dependências, execute o seguinte comando:
+Bem-vindo à documentação do codatech-frontend! Este guia irá ajudá-lo a configurar e gerenciar o site.
 
-```
-npm install
-```
-
-# Servidor de Desenvolvimento :rocket: 
-
-## Para o desenvolvimento local, você pode usar o servidor de desenvolvimento, que compila sua aplicação Vue.js e fornece recarregamento automático. Isso permite que você veja as alterações em tempo real durante o desenvolvimento.
-
-```
-npm run serve
-```
-
-## Compilação para Produção :package: 
-
-### Quando estiver pronto para implantar, você pode criar uma compilação pronta para produção usando o seguinte comando:
-
-```
-npm run build
-```
-
-### Este comando irá minificar seu código e otimizá-lo para produção, gerando os arquivos necessários no diretório dist.
-## Verificação de Qualidade de Código :white_check_mark: 
-
-### Para garantir a qualidade do código e aderência aos padrões de codificação, você pode usar o ESLint para lint e corrigir arquivos:
-
-```
-npm run lint
-```
-
-## Configuração :gear: 
-
-##  Usando Docker :whale: 
-
-## Se preferir usar o Docker, aqui está um guia sobre como configurar o contêiner Docker codatech-frontend:
-## Construir a Imagem Docker :building_construction: 
-
-### Para construir a imagem Docker, execute o seguinte comando na raiz do projeto:
+Para rodar essa aplicação será necessário ter o node e Docker instalados em sua máquina.
 
 
-```
-npm compose up
-```
+## Instalação do projeto metódo 1
 
-### A aplicação vai esta disponível em:
-```
-https://localhost:8080
-```
+1. **Clone o repositório:**
+     ```
+        git clone git@github.com:CodaTechS/coda-tech-frontend.git
+    ``` 
+2. **Instale as dependências:**
+     ```
+        npm install
+    ``` 
+3. **Iniciar o servidor**
+     ```
+        npm run dev
+    ```
+3. **Comandos de compilação para produção**
+    ```
+        npm run build
+    ```
 
+4. **Verificação de qualidade de código**
+    ```
+        npm run lint
+    ```
+## Instalação do projeto metódo 2 (Docker compose)
+
+O projeto também pode ser executado utilizando Docker Compose, que facilita a configuração e execução do ambiente. Certifique-se de ter o Docker e o Docker Compose instalados na sua máquina.
+
+### Executando com Docker Compose
+
+1. **Clonar o repositório:**
+     ```
+        git clone git@github.com:CodaTechS/coda-tech-frontend.git
+    ``` 
+
+2. **Navegar até a pasta do projeto:**
+     ```
+        git clone git@github.com:CodaTechS/coda-tech-frontend.git
+    ``` 
+
+3. **Criar arquivo `.env` para Docker Compose:**
+   - Crie um arquivo chamado `.env` na raiz do projeto e configure as variáveis de ambiente necessárias, como `PORT` e outras conforme necessário.
+
+4. **Construir e Iniciar os Contêineres:**
+   - Execute o comando `docker-compose up --build` para construir as imagens e iniciar os contêineres.
+
+5. **Acessar a API:**
+   - A aplicação estará acessível em `http://localhost:{PORT}`, onde `{PORT}` é a porta definida no arquivo `.env`.
+
+6. **Parar os Contêineres:**
+   - Para parar a execução dos contêineres, pressione `Ctrl + C` no terminal onde o `docker-compose up` está sendo executado.
+
+7. **Comandos para Produção:**
+   ```
+   docker-compose -f docker-compose.prod.yml up --build
+
+   ```
+
+7. **ESLint no Docker**
+   ```
+   docker-compose run --rm frontend npm run lint
+
+
+   ```
