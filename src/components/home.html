@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coda Tech</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <template>
+        <header> 
+            <div class= "logo">
+                <img src="../components/img/codatech.png" alt="">
+            <div>
+
+            <!-- nagavegação header -->
+
+            <nav>
+                <ul>
+                    <li>
+                        <router-link to="/">Inicio</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/sobre">Sobre nós</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/servicos">Serviços</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/cases">Cases</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/blog">Blog</router-link>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="bth-contato">Entre em contato</button>
+        </header>
+    </template>
+
+    <!--Seção de slide de início -->
+    <template>
+        <section class="home-carouser">
+            <!-- Home apresentação -->
+
+            <h1>Trazendo soluções em tecnologia para sua <span>empresa</span></h1>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, necessitatibus? Eos sint ipsam quibusdam? Dolorem consectetur illo dolor quam aut beatae, dignissimos ipsa enim veritatis. Impedit itaque soluta ipsa autem?</p>
+
+            <!-- slide carouser -->
+
+            <div class="carouser">
+                
+                <!-- Botão do carouser -->
+
+                <div class="btn-carouser">
+                    <input type="radio" name="btn-carouser" id="btn-carouser1">
+                    <input type="radio" name="btn-carouser" id="btn-carouser2">
+
+                    <input type="radio" name="btn-carouser" id="btn-carouser3">
+
+                    <input type="radio" name="btn-carouser" id="btn-carouser4">
+
+                </div>
+
+                <!-- navegação do carouser -->
+
+                <nav class="navegation-carouser">
+                    <div class="btn-primeiro"></div>
+                    <div class="btn-segundo"></div>
+                    <div class="btn-terceiro"></div>
+                    <div class="btn-quarto"></div>
+                </nav>
+            </div>
+
+            <div class="manual-navegation">
+                <label for="btn-carouser1" class="btn-manual"></label>
+                <label for="btn-carouser2" class="btn-manual"></label>
+                <label for="btn-carouser3" class="btn-manual"></label>
+                <label for="btn-carouser4" class="btn-manual"></label>
+            </div>
+        </section>
+    </template>
+
+    <!-- Seção sobre nós -->
+    <template>
+        <section class="about">
+            <div class="about-tittle">
+                <h6>SOBRE NÓS</h6>
+                <h2>
+                    Por que escolher uma <span>empresa Junior?</span>
+                </h2>
+            </div>
+            <div class="components">
+                <div class="about-components">
+
+                    <img src="img/money.png" alt="money">
+        
+                    <h4>Custo acessível</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper.</p>
+                </div>
+                <div class="about-components">
+
+                    <img src="img/money.png" alt="money">
+        
+                    <h4>Custo acessível</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper.</p>
+        
+            </div>
+            <div class="about-components">
+
+                <img src="img/money.png" alt="money">
+        
+                <h4>Custo acessível</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper.</p>
+        
+        </div>
+        <div class="about-components">
+
+            <img src="img/money.png" alt="money">
+        
+            <h4>Custo acessível</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper.</p>
+            
+        </div>
+            </div>
+            <button id="btn-about">SAIBA MAIS</button>
+        </section>
+    </template>
+
+    <!-- Seção de serviços -->
+    <template>
+        <section class="service">
+            <div class="container-service">
+                <h6>O QUE FAZEMOS</h6>
+
+                <h2>
+                    Nossos <span>
+                        Serviços
+                    </span>
+                </h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, et? Alias excepturi, delectus minus expedita aliquid distinctio. Hic, optio nesciunt tempore dolor adipisci vitae tempora illo illum itaque quod odit?
+                </p>
+            </div>
+            <div class="card-service">
+                <img src="img/card-img.png" alt="card">
+                <h4>Soluções TI</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae rerum modi saepe distinctio repudiandae, delectus ipsum quibusdam laboriosam vero, omnis exercitationem illum maiores id veritatis voluptate dignissimos sint aliquid reprehenderit?
+                </p>
+            </div>
+            <div class="card-service">
+                <img src="img/card-img.png" alt="card">
+                <h4>Soluções TI</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae rerum modi saepe distinctio repudiandae, delectus ipsum quibusdam laboriosam vero, omnis exercitationem illum maiores id veritatis voluptate dignissimos sint aliquid reprehenderit?
+                </p>
+            </div>
+            <div class="card-service">
+                <img src="img/card-img.png" alt="card">
+                <h4>Soluções TI</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae rerum modi saepe distinctio repudiandae, delectus ipsum quibusdam laboriosam vero, omnis exercitationem illum maiores id veritatis voluptate dignissimos sint aliquid reprehenderit?
+                </p>
+            </div>
+            <buttom class="btn-service">
+                SAIBA MAIS SOBRE NOSSOS SERVIÇOS
+            </buttom>
+        </section>
+    </template>
+
+    <!-- Seção Blog -->
+    <template>
+        <section class="blog">
+            <article>
+                <div class="tittle-nosso-blog">
+                    <h6>
+                        NOSSO BLOG
+                    </h6>
+                    <h2>
+                        Últimas <span>notícias</span>
+                    </h2>
+                </div>
+                <aside class="blog-news">
+                    <img src="img/noticia-01 1 (2).png" alt="blog-news">
+                    <figcaption>categoria</figcaption>
+                    <time>23/02/2024</time>
+                    <h3>What is Lorem Ipsum?</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta in soluta sed velit hic excepturi ratione ad deleniti modi nesciunt, nostrum deserunt, minima facere architecto aliquid nam, quam unde. Deserunt?
+                    </p>
+                    <div class="ver-mais">
+                        <a href="#">Ver materia completa</a>
+                    </div>
+                </aside>
+                <aside class="blog-news">
+                    <img src="img/noticia-01 1 (2).png" alt="blog-news">
+                    <figcaption>categoria</figcaption>
+                    <time>23/02/2024</time>
+                    <h3>What is Lorem Ipsum?</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta in soluta sed velit hic excepturi ratione ad deleniti modi nesciunt, nostrum deserunt, minima facere architecto aliquid nam, quam unde. Deserunt?
+                    </p>
+                    <div class="ver-mais">
+                        <a href="#">Ver materia completa</a>
+                    </div>
+                </aside>
+                <aside class="blog-news">
+                    <img src="img/noticia-01 1 (2).png" alt="blog-news">
+                    <figcaption>categoria</figcaption>
+                    <time>23/02/2024</time>
+                    <h3>What is Lorem Ipsum?</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta in soluta sed velit hic excepturi ratione ad deleniti modi nesciunt, nostrum deserunt, minima facere architecto aliquid nam, quam unde. Deserunt?
+                    </p>
+                    <div class="ver-mais">
+                        <a href="#">Ver materia completa</a>
+                    </div>
+                </aside>
+
+                <buttom class="btn-blog">
+                    VEJA MAIS EM NOSSO BLOG
+                </buttom>
+            </article>
+        </section>
+    </template>
+
+    <!-- Footer -->
+    <template>
+        <footer>
+            <div class="logo-footer">
+                <img src="img/codaTech.png" alt="codaTech">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi beatae nesciunt neque alias. Dolores saepe esse doloremque? Dignissimos nam sed voluptatem tempora tempore distinctio illo qui repellendus, facere recusandae soluta.
+                </p>
+            </div>
+
+            <div class="contatos">
+                <h6>
+                    CONTATO
+                </h6>
+                <span>
+                    +55 19 9999-9999
+                </span>
+                <span>
+                    contact@codatech.com
+                </span>
+            </div>
+            <div class="fornecimento">
+                <h3>
+                    FORNECIMENTO
+                </h3>
+                <p>
+                    09h - 18h - segunda à sexta
+                </p>
+            </div>
+            <div class="CodaTech-end">
+                <p>
+                   &copy; 2024. CodaTech Solutions. Todos os direitos reservados.
+                    Política de privacidade
+                </p>
+            </div>
+        </footer>
+    </template>
+</body>
+</html>
