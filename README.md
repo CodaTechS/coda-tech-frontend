@@ -4,7 +4,7 @@
 
 Bem-vindo à documentação do codatech-frontend! Este guia irá ajudá-lo a configurar e gerenciar o site.
 
-Para rodar essa aplicação será necessário ter o node e Docker instalados em sua máquina.
+Para rodar essa aplicação será necessário ter o Node ou Docker instalados em sua máquina.
 
 
 ## Instalação do projeto metódo 1
