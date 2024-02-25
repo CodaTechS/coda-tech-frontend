@@ -6,12 +6,18 @@
         <!-- slide carousel -->
         <div class="carousel">
             <!-- Botão do carousel -->
+                <img src="@/assets/img/banner-home 1.png" alt="codaTech">
+                <img src="@/assets/img/banner-home 1.png" alt="codaTech">
+                <img src="@/assets/img/banner-home 1.png" alt="codaTech">
+                <img src="@/assets/img/banner-home 1.png" alt="codaTech">
+            </div>
             <div class="btn-carousel">
                 <input type="radio" name="btn-carousel" id="btn-carousel1">
                 <input type="radio" name="btn-carousel" id="btn-carousel2">
                 <input type="radio" name="btn-carousel" id="btn-carousel3">
                 <input type="radio" name="btn-carousel" id="btn-carousel4">
             </div>
+            <div>
             <!-- navegação do carousel -->
             <nav class="navigation-carousel">
                 <div class="btn-primeiro"></div>

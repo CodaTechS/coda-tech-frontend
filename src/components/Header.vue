@@ -1,5 +1,6 @@
 <template>
   <header>
+      <img src="@/assets/img/codaTech.png" alt="codaTech">
     <Nav></Nav>
     <router-view></router-view>
   </header>
