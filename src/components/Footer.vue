@@ -17,6 +17,19 @@
                 <span>
                     contact@codatech.com
                 </span>
+                <div id= "redes-sociais">
+
+                    <a href="#"></a><img src= "@/assets/img/facebook.png" alt= "facebook">
+
+                    <a href="#"><img src= "@/assets/img/instagram.png" alt= "facebook"></a>
+
+                    <a href="#"><img src= "@/assets/img/twitter.png" alt= "facebook"></a>
+
+                    <a href="#"><img src= "@/assets/img/whatsapp.png" alt= "facebook"></a>
+
+                    <a href="#"><img src= "@/assets/img/tiktok.png" alt= "facebook"></a>
+
+                </div>
             </div>
             <div class="fornecimento">
                 <h3>

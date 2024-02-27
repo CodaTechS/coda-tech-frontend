@@ -1,8 +1,16 @@
 <template>
     <section class="home-carousel">
         <!-- Home apresentação -->
-        <h1>Trazendo soluções em tecnologia para sua <span>empresa</span></h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, necessitatibus? Eos sint ipsam quibusdam? Dolorem consectetur illo dolor quam aut beatae, dignissimos ipsa enim veritatis. Impedit itaque soluta ipsa autem?</p>
+        <h1>
+            Trazendo soluções em tecnologia para sua <span>empresa</span>
+        </h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, necessitatibus? Eos sint ipsam quibusdam? Dolorem consectetur illo dolor quam aut beatae, dignissimos ipsa enim veritatis. Impedit itaque soluta ipsa autem?
+        </p>
+        <div class="btn-home">
+            <input type="button" value="ENTRE EM CONTATO">
+        </div>
+
         <!-- slide carousel -->
         <div class="carousel">
             <!-- Botão do carousel -->
