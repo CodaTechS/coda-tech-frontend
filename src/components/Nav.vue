@@ -1,4 +1,5 @@
 <template>
+    <img src="@/assets/img/codaTech.png" alt="codaTech">
     <nav>
         <ul>
             <li>
@@ -17,8 +18,8 @@
                 <router-link to="/blog">Blog</router-link>
             </li>
         </ul>
-        <ButtonLink text="Entre em contato" link="#"></ButtonLink>
     </nav>
+    <ButtonLink text="Entre em contato" link="#"></ButtonLink>
 </template>
 
 <script>
