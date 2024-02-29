@@ -10,9 +10,9 @@
                 <div class="card">
                     <img class="service-card-image" src="@/assets/img/card-img.png" alt="Serviços 1 codatech">
                     <div class="card-body">
-                        <h3 class="service-card-title">Custo Acessível</h3>
+                        <h3 class="service-card-title">Soluções TI</h3>
                         <p class="service-card-description">
-                            Oferecemos soluções a um preço acessível, proporcionando qualidade sem comprometer seu orçamento.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
                         </p>
                     </div>
                 </div>
@@ -21,9 +21,9 @@
                 <div class="card">
                     <img class="service-card-image" src="@/assets/img/card-img.png" alt="Serviços 1 codatech">
                     <div class="card-body">
-                        <h3 class="service-card-title">Custo Acessível</h3>
+                        <h3 class="service-card-title">Soluções TI</h3>
                         <p class="service-card-description">
-                            Oferecemos soluções a um preço acessível, proporcionando qualidade sem comprometer seu orçamento.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
                         </p>
                     </div>
                 </div>
@@ -32,9 +32,9 @@
                 <div class="card">
                     <img class="service-card-image" src="@/assets/img/card-img.png" alt="Serviços 1 codatech">
                     <div class="card-body">
-                        <h3 class="service-card-title">Custo Acessível</h3>
+                        <h3 class="service-card-title">Soluções TI</h3>
                         <p class="service-card-description">
-                            Oferecemos soluções a um preço acessível, proporcionando qualidade sem comprometer seu orçamento.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
                         </p>
                     </div>
                 </div>
