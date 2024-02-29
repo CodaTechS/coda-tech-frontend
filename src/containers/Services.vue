@@ -1,8 +1,5 @@
 <template>
     <section class="service">
-            <div class="img-background-service">
-                <img src="@/assets/img/bg-services 1.png" alt="codaTech">
-            </div>
             <div class="container-service">
                 <h6>O QUE FAZEMOS</h6>
 
