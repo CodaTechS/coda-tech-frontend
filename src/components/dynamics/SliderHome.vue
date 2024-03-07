@@ -13,18 +13,36 @@
         <!-- Carrossel de Slides -->
         <div class="carousel">
             <!-- Imagens do Carrossel -->
-            <img src="@/assets/img/bg-home.png" alt="Imagem do Carrossel">
-            <img src="@/assets/img/bg-home.png" alt="Imagem do Carrossel">
-            <img src="@/assets/img/bg-home.png" alt="Imagem do Carrossel">
-            <img src="@/assets/img/bg-home.png" alt="Imagem do Carrossel">
+            <img src="../imge/bg-home.png" alt="Imagem do Carrossel">
+            <img src="../imge/bg-home.png" alt="Imagem do Carrossel">
+            <img src="../imge/bg-home.png" alt="Imagem do Carrossel">
+            <img src="../imge/bg-home.png" alt="Imagem do Carrossel">
         </div>
         <!-- Navegação do Carrossel -->
-        <nav class="carousel-navigation">
-            <li class="navigation-button"></li>
-            <li class="navigation-button"></li>
-            <li class="navigation-button"></li>
-            <li class="navigation-button"></li>
-        </nav>
+        <div class="navigatio-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+        <div class="slides">
+        <!--radio buttons-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--fim radio button-->
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+       <div class="btn-home">
+        <input type="button" value="ENTRE EM CONTATO">
+    </div>
     </section>
 </template>
 
