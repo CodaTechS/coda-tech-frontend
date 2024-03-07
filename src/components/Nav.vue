@@ -33,4 +33,79 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --c00:#F5F7FF;
+    --c01:#E5ECFF;
+    --c02:#CDDBFF;
+    --c03:#B3C8ff;
+    --c04:#9BB6FB;
+    --C05:#8099DA;
+    --c06:#6179AC;
+    --c07:#53689D;
+    --c08:#465783;
+    --C09:#3B486A;
+    --c10:#2F384F;
+    --c11:#151820;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+header {
+    background-color: var(--c00);
+    color: var(--C09);
+    height: fit-content;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav{
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100px;
+}
+
+header nav ul {
+    margin: auto 0;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+
+}
+
+header nav ul li {
+    min-width: fit-content;
+    height: fit-content;
+    padding: 0 0.75rem;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
 </style>
