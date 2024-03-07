@@ -3,7 +3,7 @@
         <!-- Apresentação da Página Inicial -->
         <div class="home-presentation">
             <h1 class="home-carousel-title">
-                Trazendo soluções em tecnologia para sua <span>empresa</span>
+                Trazendo soluções em tecnologia para sua <span>empresa.</span>
             </h1>
             <p class="home-carousel-text">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, necessitatibus? Eos sint ipsam quibusdam? Dolorem consectetur illo dolor quam aut beatae, dignissimos ipsa enim veritatis. Impedit itaque soluta ipsa autem?
