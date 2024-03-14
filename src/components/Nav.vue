@@ -32,80 +32,49 @@ export default {
 };
 </script>
 
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+<style scoped >
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  padding: 0;
+  margin: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
 }
 
-:root{
-    --c00:#F5F7FF;
-    --c01:#E5ECFF;
-    --c02:#CDDBFF;
-    --c03:#B3C8ff;
-    --c04:#9BB6FB;
-    --C05:#8099DA;
-    --c06:#6179AC;
-    --c07:#53689D;
-    --c08:#465783;
-    --C09:#3B486A;
-    --c10:#2F384F;
-    --c11:#151820;
-
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins";
-}
-
-header {
-    background-color: var(--c00);
-    color: var(--C09);
-    height: fit-content;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+template{
+  background-color: #f5f7ff;
 }
 
 nav{
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
 }
 
-.logo img {
-    width: 100px;
+ul{
+  display: center;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
 }
 
-header nav ul {
-    margin: auto 0;
-    width: fit-content;
+@media screen  and (max-width: 730px){
+  nav{
+    padding: 1.5rem 4rem;
+  }
+
+  nav > ul{
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 0 2rem;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
 
-}
-
-header nav ul li {
-    min-width: fit-content;
-    height: fit-content;
-    padding: 0 0.75rem;
-    list-style: none;
-    justify-content: space-between;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
+  nav > li{
+    display: block;
+    padding-top: 1.2rem;
+  }
 }
 </style>

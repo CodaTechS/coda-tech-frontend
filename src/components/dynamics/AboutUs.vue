@@ -50,6 +50,14 @@
                 </div>
             </article>
         </div>
+        <div class="arrow">
+                        <a href="#">
+                            <img src="#" alt="seta esquerda">
+                        </a>
+                        <a href="#">
+                            <img src="#" alt="seta direita">
+                        </a>
+                    </div>
         <ButtonLink text="Saiba mais" link="#"></ButtonLink>
     </section>
 </template>
@@ -66,122 +74,131 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'poppins', sans-serif;
 }
 
-:root{
-    --c00:#F5F7FF;
-    --c01:#E5ECFF;
-    --c02:#CDDBFF;
-    --c03:#B3C8ff;
-    --c04:#9BB6FB;
-    --C05:#8099DA;
-    --c06:#6179AC;
-    --c07:#53689D;
-    --c08:#465783;
-    --C09:#3B486A;
-    --c10:#2F384F;
-    --c11:#151820;
-
-}
-
-body{
-    background-color: var(--c00);
+template{
+    color: black;
     margin-left: 10%;
     margin-right: 10%;
     font-family: "Poppins";
+    display: flex;
+    background-color: #F5F7FF;
 }
 
-section .container-about{
+h2{
+    opacity: 50%;
+    margin-top: 1rem;
+    font-size: 14px;
+    color: black;
+}
+
+section .section-about-us-title{
     display: grid;
     align-items: center;
     justify-content: space-between;
     gap: 0.3rem;
-    margin-bottom: 1.5rem;
-    margin-top: 3rem;
+
 }
 
-section .container-about p{
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+.section-about-us-title > p{
+    margin-bottom: 1rem;
+    margin-top: 0;
     text-align: justify;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 32px;
+    color: black;
 }
 
-h6{
-    opacity: 50%;
+section .section-about-us-title span{
+    color: #8099DA;
 }
 
-section .container-about span{
-    color: var(--C05);
+.section-about-us-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 25px;
 }
 
-.box-about{
+.card{
+    width: 75%;
+    margin: 0 1%;
     display: inline-block;
-    margin: 1px;
-    text-align: justify;
-    width: calc(50% - 10px);
-    margin-bottom: 45px;
-    padding: 50px;
+    flex-direction: row;
+    background-color: rgba(225, 225, 225, 0.00001);
+    padding: 40px;
+    border: 0.1px solid #8099DA;
+    text-align: center;
     background-color: #8099DA;
+
 }
 
-.box-about h4{
+ .card h3{
     font-size: 32px;
     margin-top: 10px;
-    color: #E5ECFF;
+    color: #fff;
 }
 
-.box-about p{
+.card p{
     font-size: 16px;
     margin-top: 10px;
     text-align: justify;
     align-items: center;
     opacity: 50%;
+    color: #fff;
 }
 
-.btn-home{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 75px;
-
+.arrow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
-section .btn-home{
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    background-color: #6077A6;
-    border: none;
-    border-radius: 5px;
-
+.arrow a {
+    margin: 0 10px;
 }
 
-section .btn-home p{
-    text-align: center;
-
+.arrow img{
+    width: 30px;
+    height: auto;
 }
 
-section .btn-home input{
-    border: none;
-    outline: none;
-    background: none;
-    box-shadow: none;
-    appearance: none;
-    color: white;
+@media screen and (max-width: 730px) {
+    template{
+    color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "Poppins";
+    display: flex;
+    background-color: #F5F7FF;
+    }
 
+    .card:not(:first-child) {
+        display: none;
+    }
+
+    .arrow{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .arrow a {
+        margin: 0 10px;
+    }
+
+    .arrow img{
+        width: 30px;
+        height: auto;
+    }
 }
+
 </style>

@@ -34,29 +34,14 @@
     </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-:root{
-    --c00:#F5F7FF;
-    --c01:#E5ECFF;
-    --c02:#CDDBFF;
-    --c03:#B3C8ff;
-    --c04:#9BB6FB;
-    --C05:#8099DA;
-    --c06:#6179AC;
-    --c07:#53689D;
-    --c08:#465783;
-    --C09:#3B486A;
-    --c10:#2F384F;
-    --c11:#151820;
-
+  padding: 0;
+  margin: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 footer {
@@ -67,7 +52,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto 1fr;
-    font-family: "roboto";
+    font-family: 'poppins';
 }
 
 .footer-section-logo-section, .footer-section-contact-section, .footer-section-supply-section {

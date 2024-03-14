@@ -40,6 +40,14 @@
                 </div>
             </article>
         </div>
+        <div class="arrow">
+                        <a href="#">
+                            <img src="#" alt="seta esquerda">
+                        </a>
+                        <a href="#">
+                            <img src="#" alt="seta direita">
+                        </a>
+                    </div>
         <ButtonLink text="Saiba mais sobre nossos serviços" link="#"></ButtonLink>
     </section>
 </template>
@@ -56,126 +64,137 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
-
-:root{
-    --c00:#F5F7FF;
-    --c01:#E5ECFF;
-    --c02:#CDDBFF;
-    --c03:#B3C8ff;
-    --c04:#9BB6FB;
-    --C05:#8099DA;
-    --c06:#6179AC;
-    --c07:#53689D;
-    --c08:#465783;
-    --C09:#3B486A;
-    --c10:#2F384F;
-    --c11:#151820;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
 
-body{
-    background-image: url(../imge/bg-services.png);
+template{
+    background-image: url(@/assets/img/bg-service.png);
     background-repeat: no-repeat;
-    color: white;
+    color: black;
     margin-left: 10%;
     margin-right: 10%;
     font-family: "Poppins";
+    display: flex;
 }
 
-h6{
+h2{
     opacity: 50%;
+    margin-top: 1rem;
+    font-size: 14px;
+    color: #fff;
 }
 
-section .container-service{
+section .section-services-title{
     display: grid;
     align-items: center;
     justify-content: space-between;
     gap: 0.3rem;
-    margin-bottom: 1.5rem;
-    margin-top: 3rem;
+
 }
 
-section .container-service p{
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+section #title{
+    font-size: 32px;
+    font-family: "Poppins";
+    color: #fff;
+}
+
+.section-services-title > p{
+    margin-bottom: 1rem;
+    margin-top: 0;
     text-align: justify;
     font-weight: 400;
     font-size: 14px;
-    opacity: 50%;
+    color: #fff;
 }
 
-section .container-service span{
-    color: var(--C05);
+section .section-services-title span{
+    color: #8099DA;
 }
 
-section .card-service{
-    width: 30%;
+.section-services-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 75%;
     margin: 0 1%;
     display: inline-block;
-    background-color: rgba(225, 225, 225, 0.001);
+    flex-direction: row;
+    background-color: rgba(225, 225, 225, 0.00001);
     padding: 40px;
-    border: 0.1px solid var(--C05);
+    border: 0.1px solid #8099DA;
     text-align: center;
-    background-color: #6179AC;
+
 }
 
-section .card-service h4{
+ .card h3{
     font-size: 32px;
     margin-top: 10px;
-    color: #2F384F;
+    color: #fff;
 }
 
-section .card-service p{
+.card p{
     font-size: 16px;
     margin-top: 10px;
     text-align: justify;
     align-items: center;
     opacity: 50%;
+    color: #fff;
 }
 
-.btn-home{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 75px;
-
+.arrow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
-section .btn-home{
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    background-color: #6077A6;
-    border: none;
-    border-radius: 5px;
-
+.arrow a {
+    margin: 0 10px;
 }
 
-section .btn-home p{
-    text-align: center;
-
+.arrow img{
+    width: 30px;
+    height: auto;
 }
 
-section .btn-home input{
-    border: none;
-    outline: none;
-    background: none;
-    box-shadow: none;
-    appearance: none;
-    color: white;
+@media screen and (max-width: 730px) {
 
+    template{
+    background-image: url(@/assets/img/bg-service.mobile.png);
+    background-repeat: no-repeat;
+    color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "Poppins";
+    display: flex;
+
+    }
+    .card:not(:first-child) {
+        display: none;
+    }
+
+    .arrow{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .arrow a {
+        margin: 0 10px;
+    }
+
+    .arrow img{
+        width: 30px;
+        height: auto;
+    }
 }
 
 </style>

@@ -13,10 +13,10 @@
         <!-- Carrossel de Slides -->
         <div class="carousel">
             <!-- Imagens do Carrossel -->
-            <img src="../imge/bg-home.png" alt="Imagem do Carrossel">
-            <img src="../imge/bg-home.png" alt="Imagem do Carrossel">
-            <img src="../imge/bg-home.png" alt="Imagem do Carrossel">
-            <img src="../imge/bg-home.png" alt="Imagem do Carrossel">
+            <img src="@/assets/img/bg-home.png" alt="Imagem do Carrossel">
+            <img src="@/assets/img/bg-home.png" alt="Imagem do Carrossel">
+            <img src="@/assets/img/bg-home.png" alt="Imagem do Carrossel">
+            <img src="@/assets/img/bg-home.png" alt="Imagem do Carrossel">
         </div>
         <!-- Navegação do Carrossel -->
         <div class="navigatio-auto">
@@ -58,32 +58,17 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 
 }
 
-:root{
-    --c00:#F5F7FF;
-    --c01:#E5ECFF;
-    --c02:#CDDBFF;
-    --c03:#B3C8ff;
-    --c04:#9BB6FB;
-    --C05:#8099DA;
-    --c06:#6179AC;
-    --c07:#53689D;
-    --c08:#465783;
-    --C09:#3B486A;
-    --c10:#2F384F;
-    --c11:#151820;
-
-}
-
-body {
+template {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -136,12 +121,12 @@ body {
 
 .home-carousel-title {
     font-size: 32px;
-    color:var(--c00);
+    color:#F5F7FF;
 }
 
 .home-carousel-text{
     font-size: 16px;
-    color:var(--c00) ;
+    color:#F5F7FF ;
     opacity: 50%;
     margin-top: 20px;
 }
@@ -162,7 +147,7 @@ input{
 }
 
 span{
-    color: var(--C05);
+    color: #8099DA;
 }
 
 .manual-btn,
@@ -212,41 +197,20 @@ span{
     background-color: #fff;
 }
 
-.btn-home{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+@media screen  and (max-width: 730px) {
+  .home-presentation .home-carousel-title .home-carousel-text{
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    background-image: url(@/assets/img/bg-home-mobile.png);
+    background-repeat: no-repeat;
+  }
 
+  .home-carousel-title span{
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    color:#8099DA ;
+  }
 }
-
-section .btn-home{
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    background-color:var(--C09);
-    border: none;
-    border-radius: 5px;
-
-}
-
-section .btn-home p{
-    text-align: center;
-
-}
-
-section .btn-home input{
-    border: none;
-    outline: none;
-    background: none;
-    box-shadow: none;
-    appearance: none;
-    color: white;
-
-}
-
 </style>

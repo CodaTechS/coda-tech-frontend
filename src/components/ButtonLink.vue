@@ -13,15 +13,11 @@ export default {
 </script>
 
 <style scoped>
-.btn-link{
+template{
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-}
-
-section .btn-link{
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -35,18 +31,9 @@ section .btn-link{
 
 }
 
-section .btn-link p{
+a{
     text-align: center;
 
 }
 
-section .btn-link input{
-    border: none;
-    outline: none;
-    background: none;
-    box-shadow: none;
-    appearance: none;
-    color: white;
-
-}
 </style>

@@ -36,6 +36,14 @@
                 </div>
             </article>
         </div>
+        <div class="arrow">
+                        <a href="#">
+                            <img src="#" alt="seta esquerda">
+                        </a>
+                        <a href="#">
+                            <img src="#" alt="seta direita">
+                        </a>
+                    </div>
         <ButtonLink text="Veja mais em nosso blog" link="#"></ButtonLink>
     </section>
 </template>
@@ -52,151 +60,132 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'poppins', sans-serif;
 }
 
-:root{
-    --c00:#F5F7FF;
-    --c01:#E5ECFF;
-    --c02:#CDDBFF;
-    --c03:#B3C8ff;
-    --c04:#9BB6FB;
-    --C05:#8099DA;
-    --c06:#6179AC;
-    --c07:#53689D;
-    --c08:#465783;
-    --C09:#3B486A;
-    --c10:#2F384F;
-    --c11:#151820;
-
-}
-
-body{
-    background-color: var(--c00);
+template{
+    color: black;
     margin-left: 10%;
     margin-right: 10%;
-    display: flex;
     font-family: "Poppins";
+    display: flex;
+    background-color: #F5F7FF;
 }
 
-.tittle-nosso-blog{
+h2{
+    opacity: 50%;
+    margin-top: 1rem;
+    font-size: 14px;
+    color: #fff;
+}
+
+section .section-news-title{
     display: grid;
     align-items: center;
     justify-content: space-between;
     gap: 0.3rem;
-    margin-bottom: 1.5rem;
-    margin-top: 3rem;
+
 }
 
-.tittle-nosso-blog p {
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+.section-news-title > p{
+    margin-bottom: 1rem;
+    margin-top: 0;
     text-align: justify;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 32px;
+    color: black;
 }
 
-.tittle-nosso-blog span{
-    color: blue;
+section .section-news-title span{
+    color: #8099DA;
 }
 
-.blog-news{
-    width: 30%;
-    height: auto;
+.section-news-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 75%;
     margin: 0 1%;
-    background-color: #6077A6;
     display: inline-block;
-    padding: 0px;
-    align-items: center;
+    flex-direction: row;
+    background-color: rgba(225, 225, 225, 0.00001);
+    padding: 40px;
+    border: 0.1px solid #8099DA;
     text-align: center;
-}
-
-.blog-news figcaption{
-    width: 70%;
-    text-align: start;
-    display: inline-block;
-    padding: 10px;
 
 }
 
-.blog-news time{
-     width: 50%;
-    text-align: end;
-    margin: 0 0;
-
-}
-
-.blog-news h3{
-    font-size: 24px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.blog-news p{
-    font-size: 14px;
-    margin-bottom: 15px;
-    text-align: justify;
-    padding: 15px;
-}
-
-.blog-news a{
-    color: #0b4dcf;
-    text-decoration: underline;
-    text-align: justify;
-}
-
-.blog-news img{
+.card img{
+    margin: 0;
+    padding: 0;
     width: 100%;
+    height: 100%;
     border-radius: 5px
 }
 
-.blog-news a{
-    padding: 15px;
-    text-decoration: none;
+ .card h3{
+    font-size: 32px;
+    margin-top: 10px;
+    color: black;
 }
 
-.btn-home{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-bottom: -500px;
-
-}
-
-section .btn-home{
-    display: inline-block;
-    padding: 10px 20px;
+.card p{
     font-size: 16px;
-    font-weight: bold;
-    text-align: center;
+    margin-top: 10px;
+    text-align: justify;
+    align-items: center;
+    opacity: 50%;
+    color: black;
+}
+
+.card a{
     text-decoration: none;
-    color: white;
-    background-color: #6077A6;
-    border: none;
-    border-radius: 5px;
-
+    color: #8099DA;
 }
 
-section .btn-home p{
-    text-align: center;
-
+.arrow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
-section .btn-home input{
-    border: none;
-    outline: none;
-    background: none;
-    box-shadow: none;
-    appearance: none;
-    color: white;
+.arrow a {
+    margin: 0 10px;
+}
 
+.arrow img{
+    width: 30px;
+    height: auto;
+}
+
+@media screen and (max-width: 730px) {
+    .card:not(:first-child) {
+        display: none;
+    }
+
+    .arrow{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .arrow a {
+        margin: 0 10px;
+    }
+
+    .arrow img{
+        width: 30px;
+        height: auto;
+    }
 }
 </style>
