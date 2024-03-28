@@ -17,6 +17,7 @@
             <img src="@/assets/img/bg-home.png" alt="Imagem do Carrossel">
             <img src="@/assets/img/bg-home.png" alt="Imagem do Carrossel">
             <img src="@/assets/img/bg-home.png" alt="Imagem do Carrossel">
+            <img id="mobile" src="@/assets/img/bg-home-mobile.png" alt="Imagem do Carrossel">
         </div>
         <!-- Navegação do Carrossel -->
         <div class="navigatio-auto">
@@ -57,48 +58,50 @@ export default {
 };
 </script>
 
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+<style scoped >
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:'poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-template {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-y: hidden;
-    font-family: "Poppins";
+.home-presentation{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-bottom: 30%;
+  margin-left: 5%;
 }
 
-.home-carousel {
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+.home-carousel-title{
+  font-size: 32px;
+  text-align: justify;
+  color: white;
+  font-family:'poppins', sans-serif;
+}
+
+.home-carousel-title span{
+  color: #9bb6fb;
+}
+
+.home-carousel-text{
+  font-size: 16px;
+  text-align: start;
+  color: white;
 }
 
 .carousel {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-}
-
-.slide {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: none;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
 }
 
 .carousel img {
@@ -107,110 +110,56 @@ template {
     object-fit: cover;
 }
 
-.home-presentation {
-    position: absolute;
-    top: 20%;
-    left: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    transform: translateY(-50%);
-    z-index: 1;
-    text-align: left;
-    max-width: calc(100% - 40px);
-}
-
-.home-carousel-title {
-    font-size: 32px;
-    color:#F5F7FF;
-}
-
-.home-carousel-text{
-    font-size: 16px;
-    color:#F5F7FF ;
-    opacity: 50%;
-    margin-top: 20px;
-}
-
-.manual-navigation,
-.navigation-auto {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 10px;
-
-}
-
-input{
+.carousel #mobile {
     display: none;
 }
 
-span{
-    color: #8099DA;
+.carousel-navigation{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+  color: black;
+
 }
 
-.manual-btn,
-.navigation-auto div {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #fff;
-    padding: 5px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 1s;
+.carousel-navigation li{
+  width: 2%;
+  justify-content: space-between;
 }
 
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
+@media screen and (max-width: 768px) {
 
-.manual-btn:hover,
-.navigation-auto div:hover {
-    background-color: #fff;
-}
-
-#radio1:checked ~ .first {
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .first {
-    margin-left: -50%;
-}
-
-#radio4:checked ~ .first {
-    margin-left: -75%;
-}
-
-.navigation-auto div:not(:last-child) {
-    margin-right: -40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1,
-#radio2:checked ~ .navigation-auto .auto-btn2,
-#radio3:checked ~ .navigation-auto .auto-btn3,
-#radio4:checked ~ .navigation-auto .auto-btn4 {
-    background-color: #fff;
-}
-
-@media screen  and (max-width: 730px) {
-  .home-presentation .home-carousel-title .home-carousel-text{
-    text-align: justify;
-    justify-content: center;
-    align-items: center;
-    background-image: url(@/assets/img/bg-home-mobile.png);
-    background-repeat: no-repeat;
+  .home-presentation{
+    margin-bottom: 50%;
+    margin-left: 5%;
   }
 
-  .home-carousel-title span{
-    text-align: justify;
-    justify-content: center;
-    align-items: center;
-    color:#8099DA ;
+  .home-carousel img{
+    display: none;
+  }
+
+  .carousel #mobile{
+    display: flex;
+  }
+
+  .home-carousel-title {
+    text-align: start;
+    justify-items: start;
+    font-family:'poppins', sans-serif;
+
+  }
+
+  .home-carousel-text{
+    text-align: start;
+    justify-items: start;
+    font-family:'poppins', sans-serif;
+  }
+
+  .carousel-navigation li{
+    display: none;
   }
 }
 </style>

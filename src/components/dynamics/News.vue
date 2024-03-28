@@ -6,7 +6,7 @@
         </div>
         <div class="section-news-cards">
             <article class="section-news-card">
-                <div class="card">
+                <div class="card" id="mobile">
                     <img class="section-news-card-image" src="@/assets/img/img-noticia.png" alt="Serviços 1 codatech">
                     <div class="card-body">
                         <h3 class="section-news-card-title">What is Lorem Ipsum?</h3>
@@ -61,131 +61,148 @@ export default {
 
 <style scoped>
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+.section-news{
+  margin: 1%;
+  padding-top: 1%;
 }
 
-template{
-    color: black;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-family: "Poppins";
-    display: flex;
-    background-color: #F5F7FF;
+.section-news-title h2 {
+  opacity: 50%;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-family:'poppins', sans-serif;
 }
 
-h2{
-    opacity: 50%;
-    margin-top: 1rem;
-    font-size: 14px;
-    color: #fff;
+.section-news-title p {
+  font-size: 32px;
+  margin: 0;
+  font-family:'poppins', sans-serif;
 }
 
-section .section-news-title{
-    display: grid;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.3rem;
-
+.section-news-title span{
+    color: #9bb6fb;
 }
 
-.section-news-title > p{
-    margin-bottom: 1rem;
-    margin-top: 0;
-    text-align: justify;
-    font-weight: 400;
-    font-size: 32px;
-    color: black;
-}
-
-section .section-news-title span{
-    color: #8099DA;
+.section-news-title{
+    margin-left: 100px;
+    margin-top: 25px;
+    font-family:'poppins', sans-serif;
 }
 
 .section-news-cards{
-    display: flex;
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 75px;
+  margin: 100px;
 }
 
 .card{
-    width: 75%;
-    margin: 0 1%;
-    display: inline-block;
-    flex-direction: row;
-    background-color: rgba(225, 225, 225, 0.00001);
-    padding: 40px;
-    border: 0.1px solid #8099DA;
+    width: 360px;
+    height: 425px;
+    padding: 0px;
     text-align: center;
-
+    background-color: transparent;
+    justify-content: center;
+    background-color: #9bb6fb;
 }
 
-.card img{
-    margin: 0;
-    padding: 0;
+.card-body h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-family:'poppins', sans-serif;
+}
+
+.card-body p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family:'poppins', sans-serif;
+}
+
+.card-body a{
+  color: #0b4dcf;
+  text-decoration: underline;
+  text-align: justify;
+}
+
+.blog-news a{
+    color: #0b4dcf;
+    text-decoration: underline;
+    text-align: justify;
+}
+
+.blog-news img{
     width: 100%;
-    height: 100%;
     border-radius: 5px
 }
 
- .card h3{
-    font-size: 32px;
-    margin-top: 10px;
-    color: black;
-}
-
-.card p{
-    font-size: 16px;
-    margin-top: 10px;
-    text-align: justify;
-    align-items: center;
-    opacity: 50%;
-    color: black;
-}
-
-.card a{
+.blog-news a{
+    padding: 15px;
     text-decoration: none;
-    color: #8099DA;
 }
 
-.arrow{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+@media screen and (max-width: 768px) {
+
+  .section-news-title{
+  align-items: center;
+  justify-content: center;
+  margin-left: 18%;
+  margin-top: 5%;
+  padding-top: 5%;
+  }
+
+  .card{
+    display: none;
+  }
+
+  #mobile{
+    display: grid;
+    width: 360px;
+    height: fit-content;
+    padding: 0px;
+    text-align: center;
+    background-color: transparent;
     justify-content: center;
-    gap: 1.5rem;
+    align-items: center;
+    background-color: #9bb6fb;
+  }
+
+  #mobile img{
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 0;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  }
+
+  #mobile .section-news-card-title{
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+  font-family:'poppins', sans-serif;
+  color: black;
+  }
+
+  #mobile .section-news-card-description{
+    font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family:'poppins', sans-serif;
+  color: white;
+  }
+
+  #mobile .btn-more-news{
+  color: #0b4dcf;
+  text-decoration:none;
+  text-align: justify;
 }
 
-.arrow a {
-    margin: 0 10px;
-}
-
-.arrow img{
-    width: 30px;
-    height: auto;
-}
-
-@media screen and (max-width: 730px) {
-    .card:not(:first-child) {
-        display: none;
-    }
-
-    .arrow{
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    .arrow a {
-        margin: 0 10px;
-    }
-
-    .arrow img{
-        width: 30px;
-        height: auto;
-    }
 }
 </style>

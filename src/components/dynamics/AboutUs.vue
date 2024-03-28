@@ -4,9 +4,9 @@
             <h2>Sobre nós</h2>
             <p>Por que escolher uma <span>empresa júnior?</span></p>
         </div>
-        <div class="section-about-us-cards">
-            <article class="service-card">
-                <div class="card">
+        <div class="service-card">
+            <article class="section-about-card">
+                <div class="card" id="mobile">
                     <img class="section-about-card-image" src="@/assets/img/money.png" alt="Ícone de Custo Acessível">
                     <div class="card-body">
                         <h3 class="section-about-card-title">Custo Acessível</h3>
@@ -74,131 +74,144 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+.section-about-us-card{
+  align-items: center;
+  justify-content: center;
 }
 
-template{
-    color: black;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-family: "Poppins";
-    display: flex;
-    background-color: #F5F7FF;
+.section-about-us-title h2{
+  opacity: 50%;
+  margin: 0;
+  font-family:'poppins', sans-serif;
 }
 
-h2{
-    opacity: 50%;
-    margin-top: 1rem;
-    font-size: 14px;
-    color: black;
+.section-about-us-title p{
+  font-size: 32px;
+  margin: 0;
+  font-family:'poppins', sans-serif;
 }
 
-section .section-about-us-title{
-    display: grid;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.3rem;
-
+.section-about-us-title span{
+  color: #9bb6fb;
+  font-family:'poppins', sans-serif;
 }
 
-.section-about-us-title > p{
-    margin-bottom: 1rem;
-    margin-top: 0;
-    text-align: justify;
-    font-weight: 400;
-    font-size: 32px;
-    color: black;
+.section-about-us-title{
+  padding-bottom: 25px;
 }
 
-section .section-about-us-title span{
-    color: #8099DA;
+.section-about-us{
+  margin-left: 100px;
+  margin-top: 50px;
 }
 
-.section-about-us-cards{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 25px;
+.service-card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 75px;
 }
 
 .card{
-    width: 75%;
-    margin: 0 1%;
+  display: flex;
+  flex-direction: row;
+  width: 260px;
+  height: 260px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img{
+  width:75px;
+  height: 75px;
+  display: inline-block;
+  background-color: #9bb6fb;
+  padding: 5px;
+  border-radius: 45%;
+}
+
+.card-body h3{
+  font-size: 24px;
+  display: inline-block;
+  text-align: justify;
+  padding-left: 10px;
+  margin: 0px;
+  font-family:'poppins', sans-serif;
+  color: #9bb6fb;
+}
+
+.card-body p{
+  margin: 16px;
+  text-align: start;
+  font-family:'poppins', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+
+  .section-about-us-title{
+    align-items: center;
+  justify-content: center;
+  }
+
+  .section-about-us-title h2{
+  opacity: 50%;
+  margin: 0;
+  font-family:'poppins', sans-serif;
+}
+
+.section-about-us-title p{
+  font-size: 32px;
+  margin: 0;
+  font-family:'poppins', sans-serif;
+}
+
+.section-about-us-title span{
+  color: #9bb6fb;
+;
+  font-family:'poppins', sans-serif;
+}
+
+  .card{
+    display: none;
+  }
+
+  #mobile{
     display: inline-block;
-    flex-direction: row;
-    background-color: rgba(225, 225, 225, 0.00001);
-    padding: 40px;
-    border: 0.1px solid #8099DA;
+    width: 300px;
+    height: 400px;
+    padding: 0;
     text-align: center;
-    background-color: #8099DA;
-
-}
-
- .card h3{
-    font-size: 32px;
-    margin-top: 10px;
-    color: #fff;
-}
-
-.card p{
-    font-size: 16px;
-    margin-top: 10px;
-    text-align: justify;
-    align-items: center;
-    opacity: 50%;
-    color: #fff;
-}
-
-.arrow{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-}
+    background-color: #9bb6fb;
+  }
 
-.arrow a {
-    margin: 0 10px;
-}
+  #mobile img{
+  display: inline-block;
+  padding: 10%;
+  margin: 0 auto;
+  border-radius: 0;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  }
 
-.arrow img{
-    width: 30px;
-    height: auto;
-}
+  #mobile .section-about-card-title{
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+  font-family:'poppins', sans-serif;
+  color: white;
+  }
 
-@media screen and (max-width: 730px) {
-    template{
-    color: black;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-family: "Poppins";
-    display: flex;
-    background-color: #F5F7FF;
-    }
+  #mobile .section-about-card-description{
+    font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family:'poppins', sans-serif;
+  color: black;
+  }
 
-    .card:not(:first-child) {
-        display: none;
-    }
-
-    .arrow{
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    .arrow a {
-        margin: 0 10px;
-    }
-
-    .arrow img{
-        width: 30px;
-        height: auto;
-    }
 }
 
 </style>
