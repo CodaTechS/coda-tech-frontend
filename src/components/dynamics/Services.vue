@@ -40,14 +40,6 @@
                 </div>
             </article>
         </div>
-        <div class="arrow">
-                        <a href="#">
-                            <img src="#" alt="seta esquerda">
-                        </a>
-                        <a href="#">
-                            <img src="#" alt="seta direita">
-                        </a>
-                    </div>
         <ButtonLink text="Saiba mais sobre nossos serviços" link="#"></ButtonLink>
     </section>
 </template>

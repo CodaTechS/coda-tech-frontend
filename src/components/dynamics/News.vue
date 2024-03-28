@@ -36,14 +36,6 @@
                 </div>
             </article>
         </div>
-        <div class="arrow">
-                        <a href="#">
-                            <img src="#" alt="seta esquerda">
-                        </a>
-                        <a href="#">
-                            <img src="#" alt="seta direita">
-                        </a>
-                    </div>
         <ButtonLink text="Veja mais em nosso blog" link="#"></ButtonLink>
     </section>
 </template>
@@ -99,7 +91,7 @@ export default {
 
 .card{
     width: 360px;
-    height: 425px;
+    height: 500px;
     padding: 0px;
     text-align: center;
     background-color: transparent;
